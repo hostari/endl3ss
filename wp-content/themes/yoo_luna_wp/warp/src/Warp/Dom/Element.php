@@ -104,9 +104,8 @@ class Element extends \DOMElement
 
         return $this;
     }
-
-    public function before($data)
-    {
+    
+    public function before(...$nodes): void {
         $data = $this->prepareInsert($data);
         $this->parentNode->insertBefore($data, $this);
 
