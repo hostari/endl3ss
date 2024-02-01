@@ -1,0 +1,272 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+
+ .home-top-d {
+  background-image: url(http://localhost:8888/endless-site/wp-content/uploads/Services-ezgif.com-optimize.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  align-items: baseline;
+}
+ 
+ .what-we-do .tm-heading-line:after {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tm-heading-line:after {
+  width: 130px;
+  background-color: #336796;
+  height: 10px;
+  bottom: -30px;
+}
+
+.contact-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.form-submit {
+  border-radius: 55px !important;
+  font-family: 'Open Sans' !important;
+}
+
+.single-img img {
+  max-width: 400px;
+}
+
+.single #tm-main {
+  background-image: url(http://localhost:8888/endless-site/wp-content/uploads/header-inner-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.single .single-bottom-a {
+  background-image: url(http://localhost:8888/endless-site/wp-content/uploads/services-blog.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.results-title {
+  padding-bottom: 4px;
+}
+
+.single-results {
+  background-color: rgb(204 221 237 / 20%);
+  border-radius: 31px;
+}
+
+.single-bottom-b, 
+.page-id-158 #tm-main
+{
+  background-image: url(http://localhost:8888/endless-site/wp-content/uploads/bottom-blog.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.page-id-158 #tm-main { padding-bottom: 200px;}
+
+.our-clients-grid .uk-overlay-background {
+  background-color: rgb(255 0 0 / 80%);
+}
+
+h4,
+.uk-h4 {
+  /* font-size: 18px;
+  line-height: 26px; */
+  font-family: 'Inter';
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+h5,
+.uk-h5 {
+  /* font-size: 16px;
+  line-height: 24px; */
+  font-family: 'Inter';
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+h6,
+.uk-h6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Inter';
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.cloud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(http://localhost:8888/endless-site/wp-content/uploads/cloud-left.png), url(http://localhost:8888/endless-site/wp-content/uploads/cloud-right.png);
+  background-position: calc(10% - 10vw) center, calc(10% + 10vw) center;
+  background-size: cover;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+.home .tm-navbar-container {
+  position: relative;
+  z-index: 1;
+}
+
+.home #tm-top-a {
+  position: relative;
+  z-index: 1;
+}
+
+.cloud-container #tm-top-b {
+  height: 90vh;
+}
+
+.cloud .uk-container.uk-container-center {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  right: 0;
+}
+
+.about-form .contact-input {
+  border: none !important; 
+  border-bottom: 1px dashed #000 !important; 
+  border-radius: 0 !important; 
+  background: none !important;
+  width: 100%; 
+  font: 300 12px / 24px 'Inter' !important;
+}
+
+.contact-services .wpcf7-list-item {
+  margin-bottom: 8px;
+  margin-left: 0;
+}
+
+.contact-services input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #FF3D00;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.contact-services input[type=checkbox]:checked:before, .uk-form input[type=checkbox]:indeterminate:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background: red;
+}
+
+.uk-button-primary:hover, .uk-button-primary:focus {
+  background-color: #ffffff;
+  color: #FF3D00;
+  border-color: #FF3D00;
+  background-image: none, linear-gradient(156deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.uk-button-primary {
+  background: #FF3D00;
+  color: #fff;
+  font: 700 16px 'Inter' !important;
+  border-radius: 18px;
+}
+
+.about-form .form-submit {
+  color: #fff;
+  border-radius: 18px !important;
+}
+
+.home-teaser h3 {
+  color: #413F3F;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.home-teaser .uk-h1 {
+  font-size: 80px;
+  color: #FF3D00;
+}
+
+.cloud h2 {
+  color: #413F3F;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 32px;
+}
+
+.about-form-left .uk-h2 {
+  text-transform: none !important;
+  line-height: 54px;
+}
+
+.uk-article-title {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.single-results .uk-heading-large {
+  font-size: 75px;
+  font-weight: 400;
+  color: #413F3F;
+}
+
+.our-solution .uk-h5 {
+  color: #413F3F;
+  font-weight: 100;
+}
+
+.contact-bottom .uk-h3 {
+  color: #000000;
+}
+
+.single-results h4 {
+  font-weight: 100;
+  color: #413F3F;
+}
+
+.home-top-d .uk-container {
+  margin-right: 0;
+}
+
+/* Change background of checkmark when checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #2196F3; /* Background color for checked state */
+  border-color: #2196F3; /* Optional: Change border color for checked state */
+}
+
+/* MOBILE */
+@media (max-width: 768px) { /* Adjust according to your mobile breakpoint */
+  .cloud {
+      background-attachment: scroll; /* Make sure the background scrolls with the page */
+      background-position: 25% center, 75% center; /* Adjust the percentages as needed */
+      background-size: 50% cover; /* Cover each half of the element with each image */
+      background-repeat: no-repeat; /* Prevent the images from repeating */
+  }
+
+  .uk-h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .uk-h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}

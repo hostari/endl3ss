@@ -1,0 +1,29 @@
+# Ignore specific WordPress core files
+wp-config.php
+wp-settings.php
+wp-cron.php
+wp-comments-post.php
+
+# Ignore sensitive files
+/.htaccess
+/.env
+
+# Ignore the wp-content/uploads directory
+/wp-content/uploads/
+
+# Ignore node modules if you're using any Node.js-based tools
+/node_modules/
+
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore specific plugin or theme directories if necessary
+# /wp-content/plugins/some-plugin/
+# /wp-content/themes/some-theme/
+
+# Ignore backup, swap, system files etc
+*.bak
+*.swp
+*~ 
+._*
