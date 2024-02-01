@@ -1,6 +1,4 @@
 # Ignore specific WordPress core files
-wp-config.php
-wp-settings.php
 wp-cron.php
 wp-comments-post.php
 
