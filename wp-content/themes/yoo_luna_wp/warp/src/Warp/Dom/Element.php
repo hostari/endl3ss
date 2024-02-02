@@ -105,7 +105,7 @@ class Element extends \DOMElement
         return $this;
     }
 
-    public function before(...$nodes): self {
+    public function before(/* ...$nodes, */ ?DOMElement $referenceNode = null): self {
         $parent = $this->parentNode;
         $document = $parent->ownerDocument;
     
@@ -116,6 +116,7 @@ class Element extends \DOMElement
     
         return $this;
     }
+    
     
 
     public function after($data)
