@@ -39,6 +39,9 @@ define( 'DB_PASSWORD', $password );
 /** MySQL hostname */
 define( 'DB_HOST', $host );
 
+define('WP_HOME', 'https://endl3ss.hostari.com');
+define('WP_SITEURL', 'https://endl3ss.hostari.com');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
