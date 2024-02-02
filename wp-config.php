@@ -28,16 +28,22 @@ $password = $url["pass"];
 $database = substr($url["path"], 1);
 
 /** The name of the database for WordPress */
-define( 'DB_NAME', $database );
+define( 'DB_NAME', 'endlesssite' );
 
 /** MySQL database username */
-define( 'DB_USER', $username );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', $password );
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
-define( 'DB_HOST', $host );
+define( 'DB_HOST', 'localhost' );
+
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
 /**#@+
  * Authentication Unique Keys and Salts.
