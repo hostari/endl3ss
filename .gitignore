@@ -1,7 +1,6 @@
 # Ignore specific WordPress core files
 wp-cron.php
 wp-comments-post.php
-wp-content/plugins/widgetkit/cache/
 
 # Ignore sensitive files
 /.htaccess
