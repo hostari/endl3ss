@@ -39,9 +39,6 @@ define( 'DB_PASSWORD', $password );
 /** MySQL hostname */
 define( 'DB_HOST', $host );
 
-define('WP_HOME', 'https://endl3ss.hostari.com');
-define('WP_SITEURL', 'https://endl3ss.hostari.com');
-
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -84,6 +81,10 @@ $table_prefix = 'wp_';
  */
 define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
+
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+	$_SERVER['HTTPS'] = 'on';
+}
 
 /* That's all, stop editing! Happy publishing. */
 
