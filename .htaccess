@@ -13,3 +13,9 @@ deny from all
 # Uncomment and replace with your IP address, if you want to enable it 
 # allow from xxx.xxx.xxx.xxx
 </Files>
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+# END WordPress

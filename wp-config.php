@@ -2,66 +2,63 @@
 /**
  * The base configuration for WordPress
  *
- * The wp-config.php creation script uses this file during the installation.
- * You don't have to use the web site, you can copy this file to "wp-config.php"
- * and fill in the values.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
  * This file contains the following configurations:
  *
- * * Database settings
+ * * MySQL settings
  * * Secret keys
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://wordpress.org/documentation/article/editing-wp-config-php/
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
-// ** Database settings - You can get this info from your web host ** //
-$url = parse_url(getenv("DATABASE_URL"));
-
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
-
+// ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', $database );
+define( 'DB_NAME', 'endlesssite' );
 
 /** MySQL database username */
-define( 'DB_USER', $username );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', $password );
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
-define( 'DB_HOST', $host );
+define( 'DB_HOST', 'localhost' );
+
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
 /**#@+
- * Authentication unique keys and salts.
+ * Authentication Unique Keys and Salts.
  *
- * Change these to different unique phrases! You can generate these using
- * the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}.
- *
- * You can change these at any point in time to invalidate all existing cookies.
- * This will force all users to have to log in again.
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '?oatqL/)1-0vb*Q~%T@*A sUAw+Zow[f~E%F~:T&P9` RD;|]4iYS|lpK>;^)4E(');
-define('SECURE_AUTH_KEY',  '=*6;Z_~msP*1kwb-nSA3(7e`$8[ay-0YsmH-grtiHl)Jhj/.v?.R:>3oHp7(K!z~');
-define('LOGGED_IN_KEY',    'aQSw2543B4|njlg]uro+-r=`+O6bq+Yr9)VvO0(<c>R`:v;Ltd;mU{UhwyTizsYp');
-define('NONCE_KEY',        '$;5.sfI`HK:Slch7UfvYQfF4<DN=#v4?Ds+9M;^ w7%?9Sy,O%=;nVD }~leKC/Y');
-define('AUTH_SALT',        '+lLP#jCd*a,6T`$-I%V>xR!LuMr/|FsRyonZ6~q{&=`~s_;~|R87Jcs-_;#j_>!_');
-define('SECURE_AUTH_SALT', 'SjnM($YeWgfe5;!|D0VKdQ8J%JX,|r.($5v@$,T0B~F+yw6Pq9sG{EaSSr[BUB:0');
-define('LOGGED_IN_SALT',   'p||5aCw^,gI+^Xdn]6PVk/L6^.Yd$nJeH/+i6&{LE<&DXyu=.%*J<V4Jq*2yZb|u');
-define('NONCE_SALT',       'bSl^.UeUI*vvB&z6l>tHG#;WlsS?|AjCij>;TkN*A-qsXH1O wL=)(^*(+g$(HN}');
+define( 'AUTH_KEY',         ')$R p+}D0wv3S>E$OEoD9mD*^`@a8Z_B/NOCoXrG@LTEm>`f!!P4*j6OQfG fYLf' );
+define( 'SECURE_AUTH_KEY',  '.TcG5ad9~vMnlMj`/H3bckcv=F0XamRR=7E(]SivL(L)[-boqBOQ$7t+&vU]Q1eo' );
+define( 'LOGGED_IN_KEY',    '-M3aV~%sO^6q+O`|6*%<w|_TqzO4^u{H`XL4iy%%{>C;CJ<2y?v8|.tcy8A3O%Za' );
+define( 'NONCE_KEY',        'IatsWOl h.3DbEqB7E<4E^[ZZ._TYHP%!(qG4r${HBZx(Z;})?x~KI<ZD!]w@&j8' );
+define( 'AUTH_SALT',        'zA^%/rbu>2PfDY[gn.nWVb12;Oo|v)Cm<f^v_q0Mg.8J*t>Syjhs&bqeJ=u;f=XG' );
+define( 'SECURE_AUTH_SALT', '9Q%T{HCxSdy3Z@ZRVkS_m;,^=,G{,Cum+7O(l[ ;{Jg}u:zzP>0I~u>Sz24~p`;F' );
+define( 'LOGGED_IN_SALT',   'KdI!E]TrP9)[MXD$@me}@5^P5Kk6c:sD{zJl9|Q%![67IACkEm9/eWrZ9IV/!Kn}' );
+define( 'NONCE_SALT',       'dbz}hg0QLp~!IZovd ~Je?4VAG.N$Gs(HNM6h7U`0@-PaE9/9BigX9ZUpFvV|VRg' );
 
 /**#@-*/
 
 /**
- * WordPress database table prefix.
+ * WordPress Database Table prefix.
  *
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
@@ -76,22 +73,18 @@ $table_prefix = 'wp_';
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
- * visit the documentation.
+ * visit the Codex.
  *
- * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
-
-/* Add any custom values between this line and the "stop editing" line. */
-
-
 
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
 
 /** Sets up WordPress vars and included files. */
-require_once ABSPATH . 'wp-settings.php';
+require_once( ABSPATH . 'wp-settings.php' );
