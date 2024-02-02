@@ -105,19 +105,13 @@ class Element extends \DOMElement
         return $this;
     }
 
-    public function before(/* ...$nodes, */ ?DOMElement $referenceNode = null): self {
-        $parent = $this->parentNode;
-        $document = $parent->ownerDocument;
-    
-        foreach ($nodes as $node) {
-            $importedNode = $document->importNode($node, true);
-            $parent->insertBefore($importedNode, $this);
-        }
-    
+    public function before($data)
+    {
+        $data = $this->prepareInsert($data);
+        $this->parentNode->insertBefore($data, $this);
+
         return $this;
     }
-    
-    
 
     public function after($data)
     {
