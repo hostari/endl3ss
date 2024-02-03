@@ -3,7 +3,6 @@ wp-cron.php
 wp-comments-post.php
 
 # Ignore sensitive files
-/.htaccess
 /.env
 
 # Ignore node modules if you're using any Node.js-based tools
