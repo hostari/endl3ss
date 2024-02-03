@@ -346,7 +346,7 @@ class FieldsType
                 'class' => [
                     'tm-source-woo-price',
                     'tm-source-page' => Helper::isPageSource($product),
-                    apply_filters('woocommerce_product_price_class', 'price'),
+                    static::applyFilters($product, 'woocommerce_product_price_class', 'price'),
                 ],
             ],
             $price,
@@ -520,5 +520,17 @@ class FieldsType
                 'include' => $ids,
             ],
         );
+    }
+
+    protected static function applyFilters($productObj, ...$args)
+    {
+        global $product;
+
+        $temp = $product;
+        $product = $productObj;
+
+        apply_filters(...$args);
+
+        $product = $temp;
     }
 }

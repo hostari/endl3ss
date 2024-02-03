@@ -49,7 +49,7 @@ class LoadHighlightScript
         $document = app(Document::class);
 
         if ($document instanceof HtmlDocument) {
-            $this->handle($document->getBuffer('component'));
+            $this->handle($document->getBuffer('component') ?? '');
         }
     }
 }

@@ -81,7 +81,7 @@ trait SourceFilter
     public function applyLimit($value, $limit)
     {
         if ($limit) {
-            $value = str_replace('/\s*<br[^<]*?\/?>\s*/', ' ', $value);
+            $value = preg_replace('/\s*<br[^<]*?\/?>\s*/', ' ', $value);
             $value = strip_tags($value);
             $value = Str::limit($value, intval($limit));
         }

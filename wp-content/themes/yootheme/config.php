@@ -6,7 +6,7 @@ return [
     'theme' => fn() => [
         'name' => 'YOOtheme',
 
-        'version' => '4.2.12',
+        'version' => '4.2.13',
 
         'rootDir' => __DIR__,
 

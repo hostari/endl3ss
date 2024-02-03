@@ -9,7 +9,8 @@
         "page": "cart"
     },
     "templates": {
-        "render": "./templates/template.php"
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
     },
     "fields": {
         "page": {

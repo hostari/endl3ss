@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.2.13 (January 29, 2024)
+
+### Fixed
+
+- Fix content length filter not replacing line break elements correctly
+- Fix style library not being shown, when base style is missing
+- Fix WooCommerce warning on status page about missing shortcode (WordPress)
+- Fix compatibility issue in WooCommerce product price class filter (WordPress)
+
 ## 4.2.12 (January 17, 2024)
 
 ### Fixed
