@@ -6,9 +6,6 @@ wp-comments-post.php
 /.htaccess
 /.env
 
-# Ignore the wp-content/uploads directory
-/wp-content/uploads/
-
 # Ignore node modules if you're using any Node.js-based tools
 /node_modules/
 
