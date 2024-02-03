@@ -48,6 +48,14 @@ define( 'DB_HOST', 'localhost' );
  *
  * @since 2.6.0
  */
+define( 'AUTH_KEY',         ')$R p+}D0wv3S>E$OEoD9mD*^`@a8Z_B/NOCoXrG@LTEm>`f!!P4*j6OQfG fYLf' );
+define( 'SECURE_AUTH_KEY',  '.TcG5ad9~vMnlMj`/H3bckcv=F0XamRR=7E(]SivL(L)[-boqBOQ$7t+&vU]Q1eo' );
+define( 'LOGGED_IN_KEY',    '-M3aV~%sO^6q+O`|6*%<w|_TqzO4^u{H`XL4iy%%{>C;CJ<2y?v8|.tcy8A3O%Za' );
+define( 'NONCE_KEY',        'IatsWOl h.3DbEqB7E<4E^[ZZ._TYHP%!(qG4r${HBZx(Z;})?x~KI<ZD!]w@&j8' );
+define( 'AUTH_SALT',        'zA^%/rbu>2PfDY[gn.nWVb12;Oo|v)Cm<f^v_q0Mg.8J*t>Syjhs&bqeJ=u;f=XG' );
+define( 'SECURE_AUTH_SALT', '9Q%T{HCxSdy3Z@ZRVkS_m;,^=,G{,Cum+7O(l[ ;{Jg}u:zzP>0I~u>Sz24~p`;F' );
+define( 'LOGGED_IN_SALT',   'KdI!E]TrP9)[MXD$@me}@5^P5Kk6c:sD{zJl9|Q%![67IACkEm9/eWrZ9IV/!Kn}' );
+define( 'NONCE_SALT',       'dbz}hg0QLp~!IZovd ~Je?4VAG.N$Gs(HNM6h7U`0@-PaE9/9BigX9ZUpFvV|VRg' );
 
 /**#@-*/
 
