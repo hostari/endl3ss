@@ -86,6 +86,8 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 	$_SERVER['HTTPS'] = 'on';
 }
 
+define('WP_MEMORY_LIMIT', '256M');
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
@@ -95,6 +97,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
-
-define( 'WP_HOME', 'https://endl3ss.hostari.com' );
-define( 'WP_SITEURL', 'https://endl3ss.hostari.com' );
