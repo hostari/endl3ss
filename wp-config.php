@@ -28,16 +28,16 @@ $password = $url["pass"];
 $database = substr($url["path"], 1);
 
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'endlesssite' );
+define( 'DB_NAME', $database );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', $username );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', $password );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', $host );
 
 /**#@+
  * Authentication Unique Keys and Salts.
